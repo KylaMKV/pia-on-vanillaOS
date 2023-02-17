@@ -24,6 +24,6 @@ Enter the future root:
 
 Next, download and run the uninstall script:
 
-`update`
+`wget https://raw.githubusercontent.com/An013r/pia-on-vanillaOS/main/piauninstall.sh && sh piauninstall.sh`
 
 Once it has finished, exit the future root and reboot.
