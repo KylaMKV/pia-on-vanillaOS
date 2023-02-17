@@ -8,9 +8,16 @@ piatmp/pia.run --target piatmp/ins
 # Boot
 cp piatmp/ins/installfiles/piavpn.service /etc/systemd/system/
 systemctl enable piavpn
-# Exec and other
+# Exec
 cp piatmp/ins/installfiles/piavpn.desktop /usr/share/applications/
 cp piatmp/ins/installfiles/app-icon.png /usr/share/pixmaps/piavpn.png
 cp piatmp/ins/piafiles/* /opt/piavpn/
 
+# Other
 groupadd piavpn
+
+echo "Finished Installing! Cleaning up..."
+# Cleanup
+rm piatmp -rvf
+rm piainstall.sh
+
